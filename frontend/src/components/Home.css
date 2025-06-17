@@ -1,0 +1,159 @@
+/* Home.css */
+
+.create-task-btn {
+  background-color: #0077cc; /* Green */
+  color: white;
+  padding: 12px 24px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.create-task-btn:hover {
+  background-color: #178fe5;
+  transform: scale(1.05);
+}
+
+.create-task-btn:active {
+  background-color: #3e8e41;
+  transform: scale(1);
+}
+
+
+.container {
+  padding: 20px;
+}
+
+.create-task-btn {
+  margin-top: 20px;
+}
+
+.task-list {
+  margin-top: 30px;
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f0f0f0;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.task-name {
+  /* Will be crossed out if completed */
+}
+
+.task-name.completed {
+  text-decoration: line-through;
+}
+
+.toggle-btn {
+  padding: 4px 8px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.toggle-btn.completed {
+  background-color: green;
+}
+
+.toggle-btn.incomplete {
+  background-color: gray;
+}
+
+.toggle-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Modal styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+.modal input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-buttons button {
+  margin-left: 10px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.modal-buttons button.cancel-btn {
+  background-color: #ddd;
+  border: none;
+  border-radius: 4px;
+}
+
+.modal-buttons button.save-btn {
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.modal-buttons button.save-btn:hover {
+  background-color: #005fa3;
+}
+
+.task-actions {
+  display: flex;
+  gap: 8px; /* space between buttons */
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+.delete-btn:active {
+  background-color: #a93226;
+}
